@@ -16,13 +16,18 @@ header, footer {
     color: #ffffff;
 }
 
-a, .hero > p, footer > p {
+a, .hero > p, #call-inner > p, footer > p {
     font-size: 1.125em;
     color: #E5E7EB;
 }
 
 .logo, .hero > h1 {
     color: #F9FAF8;
+}
+
+.logo, #quote-author {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .info > h1, #quote-text {
@@ -39,7 +44,6 @@ button, .call {
     background-color: #3882F6;
     padding: 0.5em 1em;
     color: #FFFFFF;
-    font-weight: bold;
 }
 
 /* || Flexbox */
@@ -64,11 +68,6 @@ button, .call {
 nav > .wrapper {
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
 }
 
 ul {
@@ -100,6 +99,11 @@ a {
 .hero > h1 {
     font-size: 3em;
     margin: 0
+}
+
+button {
+    font-weight: bold;
+    font-size: 1em;
 }
 
 /* || Info */
@@ -143,6 +147,28 @@ a {
 
 #quote-author {
     align-self: flex-end;
+}
+
+/* || Call to action */
+
+.call {
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 0;
+}
+
+#call-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#call-inner > h2, #call-inner > p {
+    margin: 0;
+}
+
+.call > button {
+    border: 0.20em solid #FFFFFF;
 }
 
 /* || Footer */
